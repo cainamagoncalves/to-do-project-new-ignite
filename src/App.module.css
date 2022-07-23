@@ -1,0 +1,61 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.wrapper>header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.wrapper>header .createdTasks {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.wrapper>header .createdTasks p {
+  color: var(--blue-500);
+}
+
+.wrapper>header .createdTasks strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 75%;
+  padding: 0.15rem 0.5rem;
+  width: 1.5rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--gray-400);
+}
+
+.wrapper>header .finishedTasks {
+  display: flex;
+  gap: 1rem;
+}
+
+.wrapper>header .finishedTasks p {
+  color: var(--purple-500);
+}
+
+.wrapper>header .finishedTasks strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem;
+
+  font-size: 75%;
+  padding: 0.15rem 0.5rem;
+  width: 3.25rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--gray-400);
+}
