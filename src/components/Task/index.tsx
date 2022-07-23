@@ -30,7 +30,7 @@ export function Task({ content, completed, onCompleteOrRevokeTask, onDeleteTask 
           onClick={handleCompleteTask}
         />
         <span></span>
-        <label className={completed ? styles.finishedTask : styles.pendingTask}>{content}</label>
+        <p className={completed ? styles.finishedTask : styles.pendingTask}>{content}</p>
       </label>
 
       <Trash onClick={handleDeleteTask} size={20} />
